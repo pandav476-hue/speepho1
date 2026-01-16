@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main3.css">
+    <link rel="icon" href="/Images/Icon02.png" type="image/x-icon">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="This page is for Videos">
+
+
+    <title>Phone's Review</title>
+</head>
+<body>
+<div class="maincontainer">
+ <div class="review">
+  <div class="review2">
+    <div class="video"><iframe
+  id="phoneVideo"
+  width="325"
+  height="250"
+  src=""
+  frameborder="0"
+  allow="autoplay; encrypted-media; picture-in-picture"
+  allowfullscreen>
+</iframe>
+<p>Welcome to Our Phone Review Videos!
+Here, you can watch detailed videos of the latest smartphones. Each video gives you an in-depth look at the phone’s features, design, and performance. Along with the video, you’ll find complete specifications and insights to help you understand each phone better.
+
+<strong> Note: The videos are not created by us; we carefully select the best content from top creators and embed them here for your convenience. Watch, learn, and make smarter choices before buying your next device!</strong></p>
+</div>
+  </div>
+ </div>
+</div>
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  const videoId = params.get("video");
+
+  if (videoId) {
+    document.getElementById("phoneVideo").src =
+      `https://www.youtube.com/embed/${videoId}?mute=1`;
+  }
+</script>
+  
+</body>
+</html>

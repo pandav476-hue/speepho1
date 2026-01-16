@@ -1,0 +1,1060 @@
+@font-face {
+  font-family:'Font';
+  src: url(./Fonts/FasterOne-Regular.ttf);
+}
+@font-face {
+  font-family:'Font2';
+  src: url(./Fonts/RubikVinyl-Regular.ttf);
+}
+
+
+
+.slide{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: absolute ;
+  width: 250px;
+  height: 100%;
+  transition: 0.5s ease;
+  font-family: sans-serif;
+  font-weight: 800;
+  z-index: 1;
+  transform: translate(-250px);
+  opacity: 0;
+}
+.menu{
+  color: #8000ff;
+  text-align: center
+
+}
+ul li{
+  list-style: none;
+  
+}
+ul li a{
+  color: #011a40;
+  font-weight: 500;
+  padding: 5px 0;
+  display: block;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+ul li a i{
+  width: 40px;
+  text-align: center;
+}
+
+.input1{
+  display: none;
+  visibility: hidden;
+  
+}
+.toggle1{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+.toggle1 .common{
+position: absolute;
+height: 2px;
+width: 20px;
+background-color: #8000ff;
+border-radius: 50px;
+transition: 0.3s ease;
+}
+.top_line{
+  top: 30%;
+  left: 50%; 
+  transform: translate(-50%,-50%);
+}
+ .middle_line{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+ .bottom_line{
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.input1:checked ~ .toggle1 .top_line{
+  left: 2px;
+  top: 14px;
+  width: 25px;
+  transform: rotate(45deg);
+}
+.input1:checked ~ .toggle1 .bottom_line{
+  left: 2px;
+  top: 14px;
+  width: 25px;
+  transform: rotate(-45deg);
+}
+.input1:checked ~ .toggle1 .middle_line{
+  opacity: 0;
+  transform: translateX(20px);}
+
+.input1:checked ~ .slide{
+ transform: translateX(0);
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  opacity: 100;
+}
+
+body{margin:0% }
+
+.maincontainer {
+  width: 100%;
+  /* max-width: 375px; */
+  min-height: 100vh;
+  margin: 0 auto;
+  /* border: 2px solid; */
+  background-color: white
+  
+ 
+
+}
+
+.navbar  {
+  text-align: center;
+  /* font-family:monospace; */
+  font-size: 10px;
+  height: 30px;
+  border: 1.5px solid black;
+  /* background-color: black; */
+  font-weight: bold; 
+  /* color: rgb(101, 193, 101); */
+  color: #22C55E;        /* Neon Green (Tech Accent) */
+
+  font-family: font2; 
+  background-color:  #0F172A;   /* Deep Slate Blue */
+
+  
+}
+
+body{margin:0% }
+
+body{
+  background-image: url('./Images/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+ }
+
+.navbar h1{
+  margin: 0%;
+  
+}
+/* button for search */
+.searchbar button{
+  background-color:rgba(255, 111, 0, 0.883);
+  cursor: pointer;
+  height: 30px;
+  font-weight: bold;
+ box-shadow: 0 0 10px rgba(0,0,0,0.3);  
+}
+
+
+/* search bar css */
+.searchbar input {
+  height: 25px;
+  border-radius: 10px;
+  background-color: rgba(237, 246, 243, 0.581);
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: monospace;
+  margin-left: 60px;
+  font-weight: bold;
+  border-color: rgb(143, 42, 211);
+  
+}
+/* below section is for notice */
+.disclaimer p{
+  font-family: Arial, Helvetica, sans-serif; 
+  color: gray;
+  margin: 0%;
+  margin-left: 3px;
+ 
+}
+
+/* below section is for logo */
+
+/* Hide logo by default (desktop, tablet, large phones) */
+.logo{
+  display: none;
+  margin: 0%;
+  transform: translateY(-148px);
+  margin-left: 10px;
+  position: absolute;
+}
+
+/* below down is for div container where the key elements rest */
+.grid{
+  gap: 10px; 
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.Box  {
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid black;  */
+}
+
+/* Below section is for category headings */
+.elitephones h1{
+  margin:0%;
+  transform: translateY(-10px);
+  margin-left: 50px;
+   font-family: "Faster One", system-ui; 
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+
+.Highphone{
+  font-size: 32px;
+  margin-left: 85px;
+  font-family: "Faster One", system-ui;
+  font-weight: 400;
+  font-style: normal
+}
+
+.value{
+  font-size: 32px;
+  margin-left: 10px;
+  font-family: "Faster One", system-ui;
+  font-weight: 400;
+  font-style: normal
+}
+
+/* ads space section */
+.ads{
+  width: 100%;
+  height: 150px
+}
+
+/* below section is for phone's images position */
+  .phonefirst{
+  padding: 0px;
+  transform: translateX(-20px );
+  margin: 0%;
+  
+} 
+
+.phonefirst {
+  position: relative;
+  cursor: pointer;
+}
+
+.phonefirst.selected {
+  outline: 3px solid green;
+  background-color: rgba(0, 255, 0, 0.2);
+  transition: background-color 0.3s ease, outline 0.3s ease-out;
+}
+
+
+/* Below section is for titles of the mobile phones/Mobile names */
+.Box .titlefirst{
+ margin: 0%;
+ margin-left: 17px;
+ transform: translateY(-6px);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bold;
+
+ 
+}
+.titlesecond{
+ margin: 0%;
+ margin-left: 17px;
+ transform: translateY(-6px);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bold;
+
+}
+.titlethird{
+ margin: 0%;
+ margin-left: 17px;
+ transform: translateY(-6px);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bold;
+
+}
+.titlefourth{
+ margin: 0%;
+ margin-left: 17px;
+ transform: translateY(-6px);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bold;
+
+}
+.titlefifth{
+ margin: 0%;
+ margin-left: 17px;
+ transform: translateY(-6px);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bold;
+
+}
+.titlesixth{
+ margin: 0%;
+ margin-left: 17px;
+ transform: translateY(-6px);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bold;
+
+}
+.titleseventh{
+ margin: 0%;
+ margin-left: 17px;
+ transform: translateY(-6px);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bold;
+
+}
+.titleeighth{
+ margin: 0%;
+ margin-left: 17px;
+ transform: translateY(-6px);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bold;
+
+}
+.titlenineth{
+ margin: 0%;
+ margin-left: 17px;
+ transform: translateY(-6px);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bold;
+
+}
+.titletenth{
+ margin: 0%;
+ margin-left: 17px;
+ transform: translateY(-6px);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bold;
+
+}
+.titleeleventh{
+ margin: 0%;
+ margin-left: 17px;
+ transform: translateY(-6px);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bold;
+
+}
+.titletwelfth{
+ margin: 0%;
+ margin-left: 17px;
+ transform: translateY(-6px);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bold;
+
+}
+/* below section is for pricing. */
+.pricefirst{
+ margin: 0%;
+ left:15px;
+ position: relative;
+ display: inline;
+ font-weight: bold;
+}
+.pricesecond{
+ margin: 0%;
+ left:15px;
+ position: relative;
+ display: inline;
+ font-weight: bold;
+}
+.pricethird{
+ margin: 0%;
+ left:15px;
+ position: relative;
+ display: inline;
+ font-weight: bold;
+}
+.pricefourth{
+ margin: 0%;
+ left:15px;
+ position: relative;
+ display: inline;
+ font-weight: bold;
+}
+.pricefifth{
+ margin: 0%;
+ left:15px;
+ position: relative;
+ display: inline;
+ font-weight: bold;
+}
+.pricesixth{
+ margin: 0%;
+ left:15px;
+ position: relative;
+ display: inline;
+ font-weight: bold;
+}
+.priceseventh{
+ margin: 0%;
+ left:15px;
+ position: relative;
+ display: inline;
+ font-weight: bold;
+}
+.priceeigth{
+ margin: 0%;
+ left:15px;
+ position: relative;
+ display: inline;
+ font-weight: bold;
+}
+.pricenineth{
+ margin: 0%;
+ left:15px;
+ position: relative;
+ display: inline;
+ font-weight: bold;
+}
+.pricetenth{
+ margin: 0%;
+ left:15px;
+ position: relative;
+ display: inline;
+ font-weight: bold;
+}
+.priceeleventh{
+ margin: 0%;
+ left:15px;
+ position: relative;
+ display: inline;
+ font-weight: bold;
+}
+.pricetwelfth{
+ margin: 0%;
+ left:15px;
+ position: relative;
+ display: inline;
+ font-weight: bold;
+}
+
+
+/* below section is for rating */
+.ratefirst{
+  font-weight: bold;
+  margin: 0px;
+  margin-top: 8px;
+  position: relative;
+  left:14px;
+  bottom: 5px;
+}
+
+.ratesecond {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+  position: relative;
+  left: 14px;
+  bottom: 5px;
+}
+
+.ratethird {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+  position: relative;
+  left: 14px;
+  bottom: 5px;
+}
+
+.ratefourth {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+  position: relative;
+  left: 14px;
+  bottom: 5px;
+}
+
+.ratefifth {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+  position: relative;
+  left: 14px;
+  bottom: 5px;
+}
+
+.ratesixth {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+  position: relative;
+  left: 14px;
+  bottom: 5px;
+}
+
+.rateseventh {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+  position: relative;
+  left: 14px;
+  bottom: 5px;
+}
+
+.rateeighth {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+  position: relative;
+  left: 14px;
+  bottom: 5px;
+}
+
+.rateninth {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+  position: relative;
+  left: 14px;
+  bottom: 5px;
+}
+
+.ratetenth {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+  position: relative;
+  left: 14px;
+  bottom: 5px;
+}
+
+.rateeleventh {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+  position: relative;
+  left: 14px;
+  bottom: 5px;
+}
+
+.ratetwelfth {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+  position: relative;
+  left: 14px;
+  bottom: 5px;
+}
+
+
+/* Afilliate section */
+.buyfirst{
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  left:05px
+}
+.buysecond {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  left: 5px;
+}
+
+.buythird {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  left: 5px;
+}
+
+.buyfourth {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  left: 5px;
+}
+
+.buyfifth {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  left: 5px;
+}
+
+.buysixth {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  left: 5px;
+}
+
+.buyseventh {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  left: 5px;
+}
+
+.buyeighth {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  left: 5px;
+}
+
+.buyninth {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  left: 5px;
+}
+
+.buytenth {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  left: 5px;
+}
+
+.buyeleventh {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  left: 5px;
+}
+
+.buytwelfth {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  left: 5px;
+}
+
+/* Section for Review/Video */
+.videofirst{
+  text-decoration: none;
+  border: 1px solid;
+  position: relative;
+  left: 10px;
+}
+
+.videosecond {
+  text-decoration: none;
+  border: 1px solid;
+  position: relative;
+  left: 10px;
+}
+
+.videothird {
+  text-decoration: none;
+  border: 1px solid;
+  position: relative;
+  left: 10px;
+}
+
+.videofourth {
+  text-decoration: none;
+  border: 1px solid;
+  position: relative;
+  left: 10px;
+}
+
+.videofifth {
+  text-decoration: none;
+  border: 1px solid;
+  position: relative;
+  left: 10px;
+}
+
+.videosixth {
+  text-decoration: none;
+  border: 1px solid;
+  position: relative;
+  left: 10px;
+}
+
+.videoseventh {
+  text-decoration: none;
+  border: 1px solid;
+  position: relative;
+  left: 10px;
+}
+
+.videoeighth {
+  text-decoration: none;
+  border: 1px solid;
+  position: relative;
+  left: 10px;
+}
+
+.videoninth {
+  text-decoration: none;
+  border: 1px solid;
+  position: relative;
+  left: 10px;
+}
+
+.videotenth {
+  text-decoration: none;
+  border: 1px solid;
+  position: relative;
+  left: 10px;
+}
+
+.videoeleventh {
+  text-decoration: none;
+  border: 1px solid;
+  position: relative;
+  left: 10px;
+}
+
+.videotwelfth {
+  text-decoration: none;
+  border: 1px solid;
+  position: relative;
+  left: 10px;
+}
+
+/* Below section is for table contents. Div then table tree */
+.table1{ 
+  position: relative;
+  width: 58%;
+  /* border: 0.5px solid; */
+  left: 150px; 
+  bottom: 280px
+  
+}
+
+.specsfirst {
+position: relative;
+top: 2px;
+}
+
+.specsfirst  th[scope="row"] {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+.specsfirst  td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+/* //////////////////////////////////////////////////////////// */
+
+.table2{
+  position: relative;
+  width: 58%;
+  height: 100%;
+  /* border: 0.5px solid; */
+  left: 150px;
+  bottom: 280px;
+}
+
+.specssecond {
+  position: relative;
+  top: 2px
+
+}
+.specssecond  th[scope="row"] {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+.specssecond  td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+/* //////////////////////////////////////////////////////////// */
+
+.table3{
+  position: relative;
+  width: 58%;
+  height: 100%;
+  /* border: 0.5px solid; */
+  left: 150px;
+   bottom: 280px;
+
+}
+.specsthird {
+  position: relative;
+  top: 2px;
+}
+
+.specsthird th[scope="row"] {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+.specsthird td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+/* //////////////////////////////////////////////////////////// */
+
+.table4{
+  position: relative;
+  width: 58%;
+  height: 100%;
+  /* border: 0.5px solid; */
+  left: 150px; 
+   bottom: 280px;
+}
+
+.specsfourth {
+  position: relative;
+  top: 2px;
+}
+
+.specsfourth th[scope="row"] {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+.specsfourth td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+/* //////////////////////////////////////////////////////////// */
+
+.table5{
+  position: relative;
+  width: 58%;
+  height: 100%;
+  /* border: 0.5px solid; */
+  left: 150px; 
+   bottom: 280px;
+}
+.specsfifth {
+  position: relative;
+  top: 2px;
+}
+
+.specsfifth th[scope="row"] {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+.specsfifth td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+/* //////////////////////////////////////////////////////////// */
+
+.table6{
+  position: relative;
+  width: 58%;
+  height: 100%;
+  /* border: 0.5px solid; */
+  left: 150px;
+   bottom: 280px;
+}
+.specssixth {
+  position: relative;
+  top: 2px;
+}
+
+.specssixth th[scope="row"] {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+.specssixth td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+/* //////////////////////////////////////////////////////////// */
+
+.table7{
+  position: relative;
+  width: 58%;
+  height: 100%;
+  /* border: 0.5px solid; */
+  left: 150px;
+   bottom: 280px;
+}
+.specsseventh {
+  position: relative;
+  top: 2px;
+}
+
+.specsseventh th[scope="row"] {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+.specsseventh td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+/* //////////////////////////////////////////////////////////// */
+.table8{
+  position: relative;
+  width: 58%;
+  height: 100%;
+  /* border: 0.5px solid; */
+  left: 150px;
+   bottom: 280px;
+}
+.specseighth {
+  position: relative;
+  top: 2px;
+}
+
+.specseighth th[scope="row"] {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+.specseighth td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+/* //////////////////////////////////////////////////////////// */
+.table9{
+  position: relative;
+  width: 58%;
+  height: 100%;
+  /* border: 0.5px solid; */
+  left: 150px;
+   bottom: 280px; 
+}
+.specsninth {
+  position: relative;
+  top: 2px;
+}
+
+.specsninth th[scope="row"] {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+.specsninth td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+/* //////////////////////////////////////////////////////////// */
+.table10{
+  position: relative;
+  width: 58%;
+  height: 100%;
+  /* border: 0.5px solid; */
+  left: 150px;
+   bottom: 280px;
+}
+.specstenth {
+  position: relative;
+  top: 2px;
+}
+
+.specstenth th[scope="row"] {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+.specstenth td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+/* //////////////////////////////////////////////////////////// */
+.table11{
+  position: relative;
+  width: 58%;
+  height: 100%;
+  /* border: 0.5px solid; */
+  left: 150px;
+   bottom: 280px;
+}
+.specseleventh {
+  position: relative;
+  top: 2px;
+}
+
+.specseleventh th[scope="row"] {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+.specseleventh td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+/* //////////////////////////////////////////////////////////// */
+.table12{
+  position: relative;
+  width: 58%;
+  height: 100%;
+  /* border: 0.5px solid; */
+  left: 150px;
+   bottom: 280px; 
+}
+.specstwelfth {
+  position: relative;
+  top: 2px;
+}
+
+.specstwelfth th[scope="row"] {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+
+.specstwelfth td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid grey;
+}
+/* Show logo ONLY on very small screens (375px and below) */
+@media (max-width: 375px) {
+  .logo {
+    display: block;
+  }
+}
