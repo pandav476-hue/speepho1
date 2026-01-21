@@ -10,7 +10,23 @@
   </url>
 
   <url>
-    <loc>https://speepho.com/about.html</loc>
+    <loc>https://speepho.com/aboutus.html</loc>
+  </url>
+
+  <url>
+    <loc>https://speepho.com/indexvideo.html</loc>
+  </url>
+  <url>
+    <loc>https://speepho.com/ourmission.html</loc>
+  </url>
+  <url>
+    <loc>https://speepho.com/privacyandpolicy.html</loc>
+  </url>
+  <url>
+    <loc>https://speepho.com/termsandconditions.html</loc>
+  </url>
+  <url>
+    <loc>https://speepho.com/contactus.html</loc>
   </url>
 
 </urlset>
