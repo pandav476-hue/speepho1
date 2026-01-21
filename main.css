@@ -117,10 +117,8 @@ body{margin:0% }
   min-height: 100vh;
   margin: 0 auto;
   /* border: 2px solid; */
-  background-color: white
-  
- 
-
+  /* background-color: rgb(245, 240, 225) */
+  background-color: white;
 }
 
 .navbar  {
@@ -181,9 +179,11 @@ body{
 /* below section is for notice */
 .disclaimer p{
   font-family: Arial, Helvetica, sans-serif; 
-  color: gray;
+  color: rgb(11, 118, 41);
   margin: 0%;
   margin-left: 3px;
+  background-color: rgb(223, 254, 222);
+  padding: px;
  
 }
 
@@ -1059,3 +1059,5 @@ top: 2px;
     display: block;
   }
 }
+
+
