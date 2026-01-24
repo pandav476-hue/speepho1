@@ -1,46 +1,80 @@
-*{
-    margin: 0%;
-    padding: 0%;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body{margin:0% }
+body {
+    background-image: url('./Images/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
 
 .maincontainer {
-  width: 100%;
-  max-width: 375px;
-  min-height: 100vh;
-  margin: 0 auto;
-  border: 2px solid;
-  background-color: rgb(227, 254, 255)
- 
+    width: 100%;
+    max-width: 375px;
+    min-height: 100vh;
+    margin: 0 auto;
+    border: 2px solid #000;
+    background-color: rgb(227, 254, 255);
+    padding-bottom: 20px;
 }
-body{
-  background-image: url('./Images/background.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
- }
- 
- .review{
+
+.review {
     width: 100%;
-    height: 200px;
     border: 0.1px solid black;
-    
- }
- .review2{
+}
+
+.review2 {
     width: 100%;
-    height: 520px;
-    transform: translateY(201px);
- }
+    /* remove transform */
+}
 
- .video{
-   width: 90%;
-   height: 250px;
-   /* border: 0.2px solid black; */
-   left: 15px;
-   position: relative;
-   }
+.video {
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+}
 
-   
- 
+.video p {
+    margin-top: 10px;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+#phoneSpecsContainer {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+#phoneSpecsContainer h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#phoneSpecsContainer table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#phoneSpecsContainer th, #phoneSpecsContainer td {
+    padding: 5px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#phoneSpecsContainer th {
+    width: 40%;
+    font-weight: bold;
+}

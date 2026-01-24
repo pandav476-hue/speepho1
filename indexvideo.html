@@ -10,33 +10,61 @@
     <link rel="icon" href="/Images/Icon02.png" type="image/x-icon">
     <meta name="robots" content="index, follow">
     <meta name="description" content="This page is for Videos">
-<link rel="canonical" href="https://speepho.com/indexvideo.html">
-
+    <link rel="canonical" href="https://speepho.com/indexvideo.html">
 
     <title>Phone's Review</title>
 </head>
 <body>
 <div class="maincontainer">
- <div class="review">
-  <div class="review2">
-    <div class="video"><iframe
-  id="phoneVideo"
-  width="325"
-  height="250"
-  src=""
-  frameborder="0"
-  allow="autoplay; encrypted-media; picture-in-picture"
-  allowfullscreen>
-</iframe>
-<p>Welcome to Our Phone Review Videos!
-Here, you can watch detailed videos of the latest smartphones. Each video gives you an in-depth look at the phone’s features, design, and performance. Along with the video, you’ll find complete specifications and insights to help you understand each phone better.
 
-<strong> Note: The videos are not created by us; we carefully select the best content from top creators and embed them here for your convenience. Watch, learn, and make smarter choices before buying your next device!</strong></p>
-</div>
-  </div>
- </div>
-</div>
-  <script>
+  <div class="review">
+    <div class="review2">
+
+      <div class="video">
+        <iframe
+          id="phoneVideo"
+          width="325"
+          height="250"
+          src=""
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+        <p>Welcome to Our Phone Review Videos!
+        Here, you can watch detailed videos of the latest smartphones. Each video gives you an in-depth look at the phone’s features, design, and performance. Along with the video, you’ll find complete specifications and insights to help you understand each phone better.
+
+        <strong> Note: The videos are not created by us; we carefully select the best content from top creators and embed them here for your convenience. Watch, learn, and make smarter choices before buying your next device!</strong></p>
+
+        <!-- Phone Specs Container -->
+        <div id="phoneSpecsContainer">
+          <h2 id="phoneName"></h2>
+          <table>
+            <tr><th>Processor:</th><td id="specProcessor"></td></tr>
+            <tr><th>RAM:</th><td id="specRam"></td></tr>
+            <tr><th>Selfie Camera:</th><td id="specSelfie"></td></tr>
+            <tr><th>Rear Camera:</th><td id="specRear"></td></tr>
+            <tr><th>Battery:</th><td id="specBattery"></td></tr>
+            <tr><th>Storage:</th><td id="specStorage"></td></tr>
+            <tr><th>Display:</th><td id="specDisplay"></td></tr>
+            <tr><th>Body:</th><td id="specBody"></td></tr>
+            <tr><th>Weight:</th><td id="specWeight"></td></tr>
+            <tr><th>AnTuTu Score:</th><td id="specAntutu"></td></tr>
+            <tr><th>Updates:</th><td id="specUpdates"></td></tr>
+            <tr><th>OS:</th><td id="specOS"></td></tr>
+            <tr><th>Cooling:</th><td id="specCooling"></td></tr>
+          </table>
+        </div>
+
+      </div> <!-- end video -->
+
+    </div> <!-- end review2 -->
+  </div> <!-- end review -->
+
+</div> <!-- end maincontainer -->
+
+<script>
+  // Get video ID from URL
   const params = new URLSearchParams(window.location.search);
   const videoId = params.get("video");
 
@@ -44,7 +72,239 @@ Here, you can watch detailed videos of the latest smartphones. Each video gives 
     document.getElementById("phoneVideo").src =
       `https://www.youtube.com/embed/${videoId}?mute=1`;
   }
+
+  // Define phone specs mapped to video IDs
+  const phoneSpecs = {
+    "q0aFOxT6TNw": { // iPhone 17 Pro Max
+       name: "iPhone 17 Pro Max",
+  processor: "Apple A19 Pro",
+  ram: "12GB RAM",
+  storage: "256GB / 512GB / 1TB / 2TB",
+  display: "6.9-inch LTPO OLED, 120Hz, HDR",
+  rear: "48MP + 48MP (4× telephoto) + 48MP (ultrawide)",
+  selfie: "18MP selfie with Face ID, 4K video",
+  battery: "4823–5088 mAh, fast wired & MagSafe wireless charging",
+  body: "Ceramic Shield glass, aluminum frame",
+  weight: "231–233 g",
+  antutu: "2,600,583",
+  updates: "2025 – 2032",
+  os: "iOS 26",
+  cooling: "Vapor Chamber"
+
+    },
+    "hJjNitCnkZc": { // Red Magic 11 Pro
+      name: "Red Magic 11 Pro",
+  processor: "Snapdragon 8 Elite Gen 5",
+  ram: "12GB / 16GB / 24GB RAM",
+  storage: "256GB / 512GB / 1TB (UFS 4.1)",
+  display: "6.85-inch AMOLED, 144Hz, up to 2000 nits",
+  rear: "50MP main + 50MP ultrawide",
+  selfie: "16MP under-display camera",
+  battery: "7500 mAh, 120W wired, 80W wireless charging",
+  body: "Glass front & back with aluminum frame",
+  weight: "230 g",
+  antutu: "≈ 4.2 Million",
+  updates: "2025 – 2028",
+  os: "Android 16 (RedMagic OS 11)",
+  cooling: "Built-in cooling fan + advanced thermal system"
+    },
+    "FGlyjP5IVRA": { // Xiaomi 17 Ultra
+      name: "Xiaomi 17 Ultra",
+  processor: "Snapdragon 8 Elite Gen 5 (3nm)",
+  ram: "12GB / 16GB",
+  selfie: "50MP front camera",
+  rear: "50MP main + 200MP telephoto + 50MP ultrawide",
+  battery: "6800 mAh, 90W wired, 50W wireless",
+  storage: "512GB / 1TB (UFS 4.1)",
+  display: "6.9-inch LTPO AMOLED, 120Hz, HDR10+, Dolby Vision",
+  body: "Glass front, eco leather/fiber back, aluminum frame, IP68/IP69",
+  weight: "224-230 g",
+  antutu: "3.96 Million",
+  updates: "2025-2031",
+  os: "Android 16 (HyperOS 3)",
+  cooling: "Vapor chamber"
+    },
+    "4aw124GvT5I": { // Samsung S26 Ultra
+     name: "Samsung Galaxy S26 Ultra",
+
+  display: "6.9-inch LTPO AMOLED, 120Hz, HDR10+, 2600 nits",
+
+  processor: "Snapdragon 8 Elite Gen 5 (3nm)",
+
+  body: "Glass front & back (Gorilla Armor 2), titanium frame, IP68",
+
+  battery: "5000 mAh, 60W wired, 15W wireless",
+
+  ram: "12GB / 16GB",
+
+  storage: "256GB / 512GB / 1TB",
+
+  rear: "200MP main + 50MP periscope + 10MP telephoto + 50MP ultrawide",
+
+  selfie: "12MP front camera",
+
+  os: "Android 16 (One UI 8)",
+
+  updates: "7 years security updates",
+
+  weight: "214 g",
+
+  antutu: "3.8 Million",
+
+  cooling: "Vapor chamber"
+    },
+    "2MdQWo9fHZs": { // OnePlus 15
+      name: "OnePlus 15",
+  processor: "Snapdragon 8 Elite Gen 5",
+  ram: "12GB / 16GB",
+  selfie: "32MP front camera",
+  rear: "50MP main + 50MP ultrawide + 50MP telephoto",
+  battery: "7300 mAh, 120W wired, 50W wireless",
+  storage: "256GB / 512GB / 1TB",
+  display: "6.78-inch LTPO AMOLED, 165Hz, HDR10+, Dolby Vision",
+  body: "Glass front & back, aluminum frame, IP66/68/69/69K",
+  weight: "≈211 g (varies by model)",
+  antutu: "≈ 3.6 million",
+  updates: "2025–2031 (security updates)",
+  os: "Android 16 (OxygenOS 16)",
+  cooling: "360° Cryo‑Velocity cooling system"
+    },
+    "Es0M4ygDja0": { // Samsung S25 Plus
+       name: "Samsung S25 Plus",
+  processor: "Snapdragon 8 Elite (3 nm)",
+  ram: "12GB RAM",
+  selfie: "12 MP",
+  rear: "50 MP + 10 MP telephoto + 12 MP ultrawide",
+  battery: "4900 mAh, 45W wired, 15W wireless",
+  storage: "512GB",
+  display: "6.7-inch Dynamic LTPO AMOLED 2X, 120Hz",
+  body: "Glass front & back, aluminum frame, IP68",
+  weight: "190 g",
+  antutu: "2.5 million",
+  updates: "2025–2032 (security updates)",
+  os: "Android 15 (One UI 8)",
+  cooling: "Vapor chamber"
+    },
+    "QrXVDys-yqM": { // iQOO 13 5G
+      name: "Vivo IQOO 13",
+  processor: "Snapdragon 8 Elite (3nm, Octa-core 2x4.32GHz + 6x3.53GHz)",
+  ram: "12GB / 16GB",
+  selfie: "32MP front camera, HDR, 4K@60fps",
+  rear: "50MP wide + 50MP telephoto + 50MP ultrawide, OIS, 8K video",
+  battery: "6000–6150 mAh, 120W wired, 100% in 30 min",
+  storage: "256GB / 512GB / 1TB, UFS 4.0/4.1",
+  display: "6.82-inch LTPO AMOLED, 144Hz, HDR10+, 1440x3168 px",
+  body: "Glass front & back or fiber-reinforced plastic back, aluminum frame, IP68/IP69",
+  weight: "207g or 213g",
+  antutu: "≈2.79 million",
+  updates: "2025-2029 (security updates estimate)",
+  os: "Android 15, Funtouch 15 / OriginOS 5",
+  cooling: "Vapor chamber"
+    },
+    "ToGum1EEK1c": { // OnePlus 13 R 5G
+     name: "OnePlus 13R 5G",
+  processor: "Snapdragon 8 Gen 3",
+  ram: "12GB / 16GB",
+  selfie: "16MP front camera",
+  rear: "50MP main + 50MP telephoto + 8MP ultrawide",
+  battery: "6000 mAh, 80W wired",
+  storage: "256GB / 512GB",
+  display: "6.78‑inch LTPO AMOLED, 120Hz, HDR10+",
+  body: "Glass front & back, aluminum frame, IP65",
+  weight: "206 g",
+  antutu: "≈2.1 million",
+  updates: "2025–2031 (security updates estimate)",
+  os: "Android 15 (OxygenOS 15)",
+  cooling: "vapor chmaber"
+    },
+    "67xVV3-zzHg": { // Realme GT 7
+       name: "Realme GT 7",
+  processor: "MediaTek Dimensity 9400e",
+  ram: "8GB / 12GB / 16GB",
+  selfie: "32MP front camera",
+  rear: "50MP main + 50MP telephoto + 8MP ultrawide",
+  battery: "7000 mAh, 120W wired, 7.5W reverse wired",
+  storage: "256GB / 512GB",
+  display: "6.78-inch LTPO AMOLED, 120Hz, HDR10+, Dolby Vision",
+  body: "Glass front (Gorilla Glass 7i), plastic frame/back, IP69",
+  weight: "206 g",
+  antutu: "≈2.4 million",
+  updates: "2025–2031 (security updates estimate)",
+  os: "Android 15 (Realme UI 6.0)",
+  cooling: "IceSense graphene + VC cooling"
+    },
+    "jBApgVjs_2s": { // iQOO Neo 105G
+     "name": "IQOO NEO 10 5G",
+  "processor": "Snapdragon 8s Gen 4",
+  "ram": "16GB RAM",
+  "storage": "512GB",
+  "selfie": "32 MP front camera + FaceID",
+  "rear": "50 MP main + 8 MP ultrawide",
+  "battery": "7000 mAh, 120W wired, reverse wired",
+  "display": "6.78‑inch AMOLED, 144Hz, HDR, up to 4400 nits",
+  "body": "Glass front, plastic frame & back, IP65, MIL-STD-810H",
+  "weight": "206 g",
+  "antutu": "≈2.2 million",
+  "updates": "2025–2029 (security updates promise)",
+  "os": "Android 15 (Funtouch 15)",
+  "cooling": "Vapor Chamber"
+    },
+    "JF9yOZAUzSY": { // Oppo K13 Turbo
+      "name": "Realme GT Neo 6",
+  "processor": "MediaTek Dimensity 8450",
+  "ram": "8GB / 12GB / 16GB",
+  "storage": "128GB / 256GB / 512GB",
+  "selfie": "16 MP front camera + FaceID",
+  "rear": "50 MP main + 2 MP secondary",
+  "battery": "7000 mAh, 80W wired, reverse wired",
+  "display": "6.8‑inch AMOLED, 120Hz, HDR, 1600 nits peak",
+  "body": "Plastic frame & back, glass front, IPX8/IPX9 water resistant",
+  "weight": "207 g",
+  "antutu": "≈1.6 million",
+  "updates": "2025–2028 (security updates promise)",
+  "os": "Android 15 (ColorOS 15)",
+  "cooling": "Built-in fan + vapor chamber"
+    },
+    "ADgMvm-h1V0": { // OnePlus Nord CE 5
+       "name": "OnePlus Nord CE 5",
+  "processor": "MediaTek Dimensity 8350 Apex",
+  "ram": "8GB / 12GB",
+  "selfie": "16 MP front camera",
+  "rear": "50 MP main + 8 MP ultrawide",
+  "battery": "5200 mAh (Global) / 7100 mAh (India), 80W wired",
+  "storage": "128GB / 256GB",
+  "display": "6.77‑inch Fluid AMOLED, 120Hz, HDR10+, up to 1430 nits peak",
+  "body": "Glass front, plastic frame & back, IP65 water resistant",
+  "weight": "199 g",
+  "antutu": "≈1.47 million",
+  "updates": "2025–2031 (security updates promise)",
+  "os": "Android 15 (ColorOS 15)",
+  "cooling": "Vapor Chamber"
+    }
+  };
+
+  // Show the specs if video ID matches
+  if (videoId && phoneSpecs[videoId]) {
+    const specs = phoneSpecs[videoId];
+    const container = document.getElementById("phoneSpecsContainer");
+    container.style.display = "block";
+    document.getElementById("phoneName").innerText = specs.name;
+    document.getElementById("specProcessor").innerText = specs.processor;
+    document.getElementById("specRam").innerText = specs.ram;
+    document.getElementById("specSelfie").innerText = specs.selfie;
+    document.getElementById("specRear").innerText = specs.rear;
+    document.getElementById("specBattery").innerText = specs.battery;
+    document.getElementById("specStorage").innerText = specs.storage;
+    document.getElementById("specDisplay").innerText = specs.display;
+    document.getElementById("specBody").innerText = specs.body;
+    document.getElementById("specWeight").innerText = specs.weight;
+    document.getElementById("specAntutu").innerText = specs.antutu;
+    document.getElementById("specUpdates").innerText = specs.updates;
+    document.getElementById("specOS").innerText = specs.os;
+    document.getElementById("specCooling").innerText = specs.cooling;
+  }
 </script>
-  
+
+
 </body>
 </html>
