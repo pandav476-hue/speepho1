@@ -193,9 +193,9 @@ body{
 .logo{
   display: none;
   margin: 0%;
-  transform: translateY(-148px);
+  transform: translateY(-157px);
   margin-left: 10px;
-  position: absolute;
+  
 }
 
 /* below down is for div container where the key elements rest */
@@ -383,8 +383,7 @@ body{
  margin: 0%;
  left:15px;
  position: relative;
- display: inline;
- font-weight: bold;
+ display: inline; 
 }
 .pricefourth{
  margin: 0%;
@@ -1054,11 +1053,8 @@ top: 2px;
   border: 1px solid grey;
 }
 /* Show logo ONLY on very small screens (375px and below) */
-@media (max-width: 375px) {
-  .logo {
-    display: block;
-  }
-}
+
+
 
 .important {
   display: inline-block;      /* wraps content and allows padding */
@@ -1102,5 +1098,31 @@ top: 2px;
   font-size: large;
 
 }
+
+
+@media (max-width: 2774px) {
+  .searchbar{
+   display: flex;
+   justify-content: center;
+  }
+}
+
+@media (max-width: 2774px) {
+  .button{
+   display: flex;
+   justify-content: center;
+   padding-top: 7px;
+   margin: 10px;
+   position: relative;
+  }
+}
+@media (max-width: 365px) {
+.logo{
+   display: block;
+   /* position: relative; */
+  }
+}
+
+
 
 
