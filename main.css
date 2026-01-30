@@ -1123,6 +1123,67 @@ top: 2px;
   }
 }
 
+#footer{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(232, 234, 237);
+}
+
+.exampleimages{
+  display: flex;
+  justify-content: center;
+}
+
+.scroller{
+  width: 80%;
+  height: 280px;
+  /* border: 2px solid black; */
+  display: flex;
+  position: relative;
+  /* justify-self: center; */
+  transform: translateX(400px);
+  /* transform: translateY(180px); */
+  justify-content: flex-start;
+  bottom: 580px;
+  display: none
+  
+
+  
+}
+
+@media (min-width: 768px) {
+  .scroller {
+    display: flex;
+    width: 46%;
+    height: 280px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 30px;
+    margin: 10px;
+  }
+}
 
 
+@media (min-width: 1137px) {
+  .scroller {
+    width: 65%;
+    transform: translateX(290px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    left: 150px;
+    padding-left: 0%;
+    justify-content: center;
+    
+    
+  }
+}
 
+.scrollerr  {
+  width: 280px;
+  height: 280px;
+  border: 2px solid black;
+  flex-shrink: 0;   /* ✅ prevents shrinking */
+}
+
+/* This section is for scroller and scrollerr here I will add more
+scroller and there will be 11 scroller  */
