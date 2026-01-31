@@ -3,30 +3,58 @@
 
   <url>
     <loc>https://speepho.com/</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://speepho.com/compare.html</loc>
-  </url>
-
-  <url>
-    <loc>https://speepho.com/aboutus.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://speepho.com/indexvideo.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://speepho.com/aboutus.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <url>
     <loc>https://speepho.com/ourmission.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
-  <url>
-    <loc>https://speepho.com/privacyandpolicy.html</loc>
-  </url>
-  <url>
-    <loc>https://speepho.com/termsandconditions.html</loc>
-  </url>
+
   <url>
     <loc>https://speepho.com/contactus.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://speepho.com/privacyandpolicy.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://speepho.com/termsandconditions.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>

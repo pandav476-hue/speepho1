@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /compare.html
+Allow: /aboutus.html
+Allow: /indexvideo.html
+Allow: /ourmission.html
+Allow: /privacyandpolicy.html
+Allow: /termsandconditions.html
+Allow: /contactus.html
+
+Sitemap: https://speepho.com/sitemap.xml
