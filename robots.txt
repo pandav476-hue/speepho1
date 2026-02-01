@@ -1,9 +1,12 @@
+# ==============================
+# Cloudflare Managed Content (for Cloudflare AI use)
+# ==============================
+# User-agent: *
+# Content-Signal: search=yes,ai-train=no
+# Allow: /
+# Cloudflare uses the above lines internally
 
-
-User-agent: *
-Content-Signal: search=yes,ai-train=no
-Allow: /
-
+# Block unwanted bots
 User-agent: Amazonbot
 Disallow: /
 
@@ -28,7 +31,9 @@ Disallow: /
 User-agent: meta-externalagent
 Disallow: /
 
-
+# ==============================
+# Allow crawling for all other bots
+# ==============================
 User-agent: *
 Allow: /
 Allow: /compare
