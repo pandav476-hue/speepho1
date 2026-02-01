@@ -1,15 +1,15 @@
 @font-face {
-  font-family:'Font';
-  src: url(./Fonts/FasterOne-Regular.ttf);
-    
-
+  font-family: 'Font';
+  src: url('./Fonts/FasterOne-Regular.ttf') format('truetype');
+  font-display: swap;
 }
+
 @font-face {
-  font-family:'Font2';
-  src: url(./Fonts/RubikVinyl-Regular.ttf);
-    
-
+  font-family: 'Font2';
+  src: url('./Fonts/RubikVinyl-Regular.ttf') format('truetype');
+  font-display: swap;
 }
+
 
 
 
