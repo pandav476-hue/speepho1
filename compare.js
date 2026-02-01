@@ -104,10 +104,8 @@ function updateUI(id, data) {
 }
 
 
-
-if (!phones[p1] || !phones[p2]) {
-  alert("Invalid phone selection");
-} else {
+if (phones[p1] && phones[p2]) {
   updateUI("p1", phones[p1]);
   updateUI("p2", phones[p2]);
 }
+// else: do nothing (silent)
