@@ -9,9 +9,13 @@
   src: url('./Fonts/RubikVinyl-Regular.ttf') format('truetype');
   font-display: swap;
 }
-
-
-
+ 
+@font-face {
+  font-family: 'Font3';
+  src: url('./Fonts/Poppins-ExtraBold.ttf') format('truetype');
+  font-display: swap;
+}
+ 
 
 .slide{
   padding: 0%;
@@ -199,6 +203,9 @@ body{
   margin: 0%;
   transform: translateY(-157px);
   margin-left: 10px;
+  bottom:369px;
+  position: relative;
+  
   
 }
 
@@ -1130,7 +1137,8 @@ top: 2px;
 #footer{
   display: flex;
   justify-content: center;
-  background-color: rgb(232, 234, 237);
+  background-color: rgb(232, 234, 237); 
+ 
 }
 
 .exampleimages{
@@ -1189,5 +1197,32 @@ top: 2px;
   flex-shrink: 0;   /* ✅ prevents shrinking */
 }
 
-/* This section is for scroller and scrollerr here I will add more
-scroller and there will be 11 scroller  */
+.welcome{
+  font-family: font3 ;
+  font-size: 15px;
+  letter-spacing: 1px;
+  
+  /* background-color: #6ee9d8; */
+  
+}
+.welcomediv{
+  text-align: center;
+  padding: 20px;
+}
+#speepho{
+  display: block;
+  font-family: font3;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+.elite{
+  color: red;
+}
+.highend{
+  color: #22C55E;
+}
+.valuefor{
+  color: blue;
+}
