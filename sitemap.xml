@@ -1,60 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://speepho.com/</loc>
     <lastmod>2026-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://speepho.com/compare.html</loc>
+    <loc>https://speepho.com/compare</loc>
     <lastmod>2026-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://speepho.com/indexvideo.html</loc>
+    <loc>https://speepho.com/indexvideo</loc>
     <lastmod>2026-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://speepho.com/aboutus.html</loc>
+    <loc>https://speepho.com/aboutus</loc>
     <lastmod>2026-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-
   <url>
-    <loc>https://speepho.com/ourmission.html</loc>
+    <loc>https://speepho.com/ourmission</loc>
     <lastmod>2026-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-
   <url>
-    <loc>https://speepho.com/contactus.html</loc>
+    <loc>https://speepho.com/contactus</loc>
     <lastmod>2026-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
-
   <url>
-    <loc>https://speepho.com/privacyandpolicy.html</loc>
+    <loc>https://speepho.com/privacyandpolicy</loc>
     <lastmod>2026-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
-
   <url>
-    <loc>https://speepho.com/termsandconditions.html</loc>
+    <loc>https://speepho.com/termsandconditions</loc>
     <lastmod>2026-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
-
 </urlset>
