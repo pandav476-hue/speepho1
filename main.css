@@ -1257,3 +1257,9 @@ top: 2px;
   font-weight: 900;
   
 }
+.center{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
