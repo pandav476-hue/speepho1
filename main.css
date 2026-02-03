@@ -1263,3 +1263,12 @@ top: 2px;
   text-align: center;
   padding-bottom: 20px;
 }
+.vslogo {
+  justify-items: center;
+}
+.comp{
+  margin-bottom: 20px;
+  font-size: larger;
+  font-family: font3;
+  text-align: center;
+}
