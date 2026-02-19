@@ -252,13 +252,7 @@ body{
 }
 
 /* ads space section */
-.ads{
-text-align: center;
 
-justify-content: center;
-display: flex;
-
-}
 
 /* below section is for phone's images position */
   .phonefirst{
@@ -1282,11 +1276,5 @@ top: 2px;
   font-family: font3;
   font-size: 20px;
   padding:20px;
-}
-
-  .bottomad{
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
 }
 
