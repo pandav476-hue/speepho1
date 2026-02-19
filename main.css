@@ -255,6 +255,8 @@ body{
 .ads{
 text-align: center;
 margin: 20px auto;
+justify-content: center;
+display: flex;
 
 }
 
