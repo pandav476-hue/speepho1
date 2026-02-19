@@ -1283,3 +1283,10 @@ top: 2px;
   font-size: 20px;
   padding:20px;
 }
+
+  .bottomad{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
